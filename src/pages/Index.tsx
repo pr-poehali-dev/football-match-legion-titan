@@ -81,6 +81,12 @@ const Index = () => {
           backgroundImage: `linear-gradient(rgba(26, 31, 44, 0.85), rgba(26, 31, 44, 0.95)), url('https://cdn.poehali.dev/projects/946524c0-080c-4efb-baad-5c78e5489c0d/files/ce67d8e1-3105-407c-a18a-bae850e4f9ac.jpg')`
         }}
       >
+        <div className="bg-muted/30 backdrop-blur-sm border-b border-primary/20 py-2">
+          <p className="text-center text-sm text-muted-foreground">
+            ⚠️ Вымышленное мероприятие — создано в демонстрационных целях
+          </p>
+        </div>
+        
         <div className="container mx-auto px-4 py-8">
           <div className="text-center mb-12 animate-fade-in">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary pulse-glow">
