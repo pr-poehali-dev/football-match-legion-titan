@@ -30,14 +30,28 @@ const Index = () => {
 
   const activities = [
     {
+      time: '12:30',
+      title: 'Футбол для фанатов',
+      description: 'Играй вместе с другими болельщиками на мини-поле',
+      icon: 'goal',
+      image: 'https://cdn.poehali.dev/projects/946524c0-080c-4efb-baad-5c78e5489c0d/files/f46017c4-7e44-47f6-a86a-89357b0acb91.jpg'
+    },
+    {
       time: '13:00',
+      title: 'BBQ Зона',
+      description: 'Еда на гриле, шашлык, бургеры и напитки',
+      icon: 'Flame',
+      image: 'https://cdn.poehali.dev/projects/946524c0-080c-4efb-baad-5c78e5489c0d/files/ce67d8e1-3105-407c-a18a-bae850e4f9ac.jpg'
+    },
+    {
+      time: '13:30',
       title: 'Разминка команд',
       description: 'Открытая тренировка перед матчем',
       icon: 'Dumbbell',
       image: 'https://cdn.poehali.dev/projects/946524c0-080c-4efb-baad-5c78e5489c0d/files/f46017c4-7e44-47f6-a86a-89357b0acb91.jpg'
     },
     {
-      time: '13:45',
+      time: '14:00',
       title: 'Автограф-сессия',
       description: 'Встреча с игроками обеих команд',
       icon: 'Pen',
@@ -48,6 +62,13 @@ const Index = () => {
       title: 'Фан-зона',
       description: 'Конкурсы, музыка и розыгрыши призов',
       icon: 'PartyPopper',
+      image: 'https://cdn.poehali.dev/projects/946524c0-080c-4efb-baad-5c78e5489c0d/files/9c98d402-ea4a-4345-b635-ea802ee3dfd7.jpg'
+    },
+    {
+      time: '14:30',
+      title: 'DJ Set',
+      description: 'Живая музыка и атмосфера перед матчем',
+      icon: 'Music',
       image: 'https://cdn.poehali.dev/projects/946524c0-080c-4efb-baad-5c78e5489c0d/files/9c98d402-ea4a-4345-b635-ea802ee3dfd7.jpg'
     }
   ];
@@ -112,7 +133,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {activities.map((activity, index) => (
                 <Card 
                   key={index} 
