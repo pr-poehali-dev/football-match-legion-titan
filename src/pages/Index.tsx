@@ -178,29 +178,70 @@ const Index = () => {
               ))}
             </div>
 
-            <Card className="bg-gradient-to-r from-primary/20 to-secondary/20 border-primary/40 backdrop-blur-sm">
-              <CardContent className="p-8 text-center">
-                <Icon name="MapPin" size={32} className="mx-auto mb-4 text-primary" />
-                <h3 className="text-2xl font-bold mb-2 text-white">Место проведения</h3>
-                <p className="text-lg text-muted-foreground mb-4">
-                  Стадион Легион
-                </p>
-                <div className="flex flex-wrap justify-center gap-4 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Icon name="Ticket" size={18} className="text-primary" />
-                    <span>Билеты от 1200₽</span>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/40 backdrop-blur-sm">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Icon name="TrendingUp" size={28} className="text-primary" />
+                    <h3 className="text-2xl font-bold text-white">Коэффициенты</h3>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Users" size={18} className="text-primary" />
-                    <span>Для всех возрастов</span>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between p-4 bg-card/50 rounded-lg border border-primary/20 hover:border-primary/40 transition-all">
+                      <div>
+                        <div className="text-lg font-bold text-white">Победа Легион</div>
+                        <div className="text-sm text-muted-foreground">1</div>
+                      </div>
+                      <div className="text-3xl font-bold text-primary">2.80</div>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-card/50 rounded-lg border border-primary/20 hover:border-primary/40 transition-all">
+                      <div>
+                        <div className="text-lg font-bold text-white">Ничья</div>
+                        <div className="text-sm text-muted-foreground">X</div>
+                      </div>
+                      <div className="text-3xl font-bold text-primary">3.40</div>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-card/50 rounded-lg border border-primary/20 hover:border-primary/40 transition-all">
+                      <div>
+                        <div className="text-lg font-bold text-white">Победа Титан</div>
+                        <div className="text-sm text-muted-foreground">2</div>
+                      </div>
+                      <div className="text-3xl font-bold text-primary">1.95</div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Camera" size={18} className="text-primary" />
-                    <span>Фото и видео разрешены</span>
+                  <div className="mt-4 p-3 bg-secondary/10 rounded-lg border border-secondary/30">
+                    <div className="flex items-center gap-2 text-sm">
+                      <Icon name="History" size={16} className="text-secondary" />
+                      <span className="text-muted-foreground">Прошлый матч:</span>
+                      <span className="font-bold text-white">Титан 5:2 Легион</span>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gradient-to-r from-primary/20 to-secondary/20 border-primary/40 backdrop-blur-sm">
+                <CardContent className="p-8 text-center">
+                  <Icon name="MapPin" size={32} className="mx-auto mb-4 text-primary" />
+                  <h3 className="text-2xl font-bold mb-2 text-white">Место проведения</h3>
+                  <p className="text-lg text-muted-foreground mb-4">
+                    Стадион Легион
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-4 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Icon name="Ticket" size={18} className="text-primary" />
+                      <span>Билеты от 1200₽</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Icon name="Users" size={18} className="text-primary" />
+                      <span>Для всех возрастов</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Icon name="Camera" size={18} className="text-primary" />
+                      <span>Фото и видео разрешены</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
