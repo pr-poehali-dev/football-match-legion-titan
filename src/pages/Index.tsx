@@ -183,12 +183,12 @@ const Index = () => {
                 <Icon name="MapPin" size={32} className="mx-auto mb-4 text-primary" />
                 <h3 className="text-2xl font-bold mb-2 text-white">Место проведения</h3>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Стадион PTL Academy
+                  Стадион Легион
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                   <div className="flex items-center gap-2">
                     <Icon name="Ticket" size={18} className="text-primary" />
-                    <span>Вход свободный</span>
+                    <span>Билеты от 1200₽</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Users" size={18} className="text-primary" />
